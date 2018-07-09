@@ -39,3 +39,11 @@ if name and lastname and age and weight:
 
 else:
     print('Нужно заполнить все поля!')
+
+# правильное решение
+#
+# if age <= 30 and 50 <= weight < 120:
+#
+# elif age > 40 and (weight < 50 or weight > 120):
+#
+# elif age > 30 and (weight <50 or weight > 120):
