@@ -63,39 +63,40 @@ names = ['Ivan', 'Alisa', 'Bob', 'Qwerty']
 # names = ("Ivan", "Alisa", 'Bob')
 
 
-names = ['Ivan', 'Alisa', 'Bob', 'Qwerty']
-# for name in names:
-#     print(name)
+# names = ['Ivan', 'Alisa', 'Bob', 'Qwerty']
+# # for name in names:
+# #     print(name)
+# #
+# # for sym in 'qwerty':
+# #     print(sym)
+# #
 #
-# for sym in 'qwerty':
-#     print(sym)
+#
+# # выводить по строчно до 10 раз
+# # for number in range(10):
+# #     print(number, end='_')
+#
+#
+# # словари
+# # https://pythonworld.ru/tipy-dannyx-v-python/slovari-dict-funkcii-i-metody-slovarej.html
+#
+# human = {"name": 'Ivan', 'surname': "Ivanov", 'age': '20', 'money': '100.10'}
+# # print('Привет %s %s, у вас на счете %i .' % (human['name'], human['surname'], human[money]))
+#
+#
+# # for key in human.keys():
+# #     print(key)
 #
 
-
-# выводить по строчно до 10 раз
-# for number in range(10):
-#     print(number, end='_')
-
-
-# словари
-# https://pythonworld.ru/tipy-dannyx-v-python/slovari-dict-funkcii-i-metody-slovarej.html
-
-human = {"name": 'Ivan', 'surname': "Ivanov", 'age': '20', 'money': '100.10'}
-# print('Привет %s %s, у вас на счете %i .' % (human['name'], human['surname'], human[money]))
-
-
-# for key in human.keys():
-#     print(key)
-
-for key, value in human.items():
-    print(key, "->", value)
-
-
-
-# множества - это всегда уникальный набор данных
-
-# names = {'Ivan', 'Olga', 'Ivan', "Bob"}
-# numbers = {1, 2, 3, 4, 3, 4}
-numbers = set([1, 2, 3, 4, 3, 43]) #функция set делает из кортежа множество с уникальными значениями
-print(names)
-print(numbers)
+# for key, value in human.items():
+#     print(key, "->", value)
+#
+#
+#
+# # множества - это всегда уникальный набор данных
+#
+# # names = {'Ivan', 'Olga', 'Ivan', "Bob"}
+# # numbers = {1, 2, 3, 4, 3, 4}
+# numbers = set([1, 2, 3, 4, 3, 43]) #функция set делает из кортежа множество с уникальными значениями
+# print(names)
+# print(numbers)
