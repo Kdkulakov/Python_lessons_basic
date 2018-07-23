@@ -13,3 +13,45 @@
 # Для решения данной задачи используйте алгоритмы из задания easy,
 # оформленные в виде соответствующих функций,
 # и импортированные в данный файл из easy.py
+
+import hw05_easy
+import re
+
+print("Wellcome to DirUtil")
+print('Возможные варианты работы утилиты: \n \
+    1. Перейти в папку \n \
+    2. Просмотреть содержимое текущей папки \n \
+    3. Удалить папку \n \
+    4. Создать папку')
+choice_user = 0
+while choice_user not in (1, 2, 3, 4):
+    try:
+        choice_user = int(input('Выберите пункт (1, 2, 3, 4): '))
+    except NameError:
+        print("Вы ввели не корректный пункт ")
+        print('=============================')
+        continue
+
+    if choice_user == 1:
+        print('Укажите папку:')
+        namedir = input()
+        hw05_easy.change_current_dir(namedir)
+
+    elif choice_user == 2:
+        hw05_easy.show_me_dirs()
+
+    elif choice_user == 3:
+        print('Введите имя папки для удаления: ')
+        namedir = input()
+        hw05_easy.delete_directory([namedir])
+
+    elif choice_user == 4:
+        print('Введите имя папки: ')
+        namedir = input()
+        hw05_easy.create_dir_in_list([namedir])
+
+    else:
+        print('Нет такого пункта')
+        break
+
+
